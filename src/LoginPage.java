@@ -21,11 +21,8 @@ public class LoginPage implements ActionListener {
 
         logininfo = loginInfoOriginal;
 
-        int x = 50;
-        int y = 30;
-
 //      usernameLabel
-        usernameLabel.setBounds(x, y, 200, 40);
+        usernameLabel.setBounds(50, 30y, 200, 40);
         usernameLabel.setFont(new Font("Serif", Font.PLAIN, 25));
 
 //      username text field
