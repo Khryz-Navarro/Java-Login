@@ -93,7 +93,7 @@ public class LoginPage implements ActionListener {
         }
         else {
                 messageLabel.setForeground(Color.red);
-                messageLabel.setText("username not found!");
+                messageLabel.setText("username not found!!");
 
                         }
                 }
