@@ -7,7 +7,7 @@ public class IDandPsswords {
     IDandPsswords() {
         logininfo.put("admin", "admin");
         logininfo.put("admin2", "1234");
-        logininfo.put("whiteDude420", "IamRacist42069");
+        logininfo.put("whiteDude42069", "helloWorld");
     }
     public HashMap getLoginInfo(){
         return logininfo;

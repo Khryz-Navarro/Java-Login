@@ -22,11 +22,11 @@ public class LoginPage implements ActionListener {
         logininfo = loginInfoOriginal;
 
 //      usernameLabel
-        usernameLabel.setBounds(50, 30y, 200, 40);
+        usernameLabel.setBounds(50, 30, 200, 40);
         usernameLabel.setFont(new Font("Serif", Font.PLAIN, 25));
 
 //      username text field
-        usernameID.setBounds(200, 30,250,40);
+        usernameID.setBounds(200, 30,280,40);
         usernameID.setFont(new Font("Serif", Font.PLAIN, 20));
 
 //      password label
@@ -34,11 +34,11 @@ public class LoginPage implements ActionListener {
         passwordLabel.setFont(new Font("Serif", Font.PLAIN, 25));
 
 //      password text field
-        passwordID.setBounds(200, 90, 250, 40);
+        passwordID.setBounds(200, 90, 280, 40);
         passwordID.setFont(new Font("Serif", Font.BOLD, 20));
 
 
-        messageLabel.setBounds(180, 200, 450, 35);
+        messageLabel.setBounds(50, 200, 450, 35);
 	    messageLabel.setFont(new Font(null,Font.ITALIC,25));
 
 //      Login button
@@ -57,7 +57,7 @@ public class LoginPage implements ActionListener {
         frame.add(loginButton);
         frame.add(messageLabel);
 
-        frame.setSize(600, 300);
+        frame.setSize(600, 280);
         frame.setResizable(false);
         frame.setLayout(null);
         frame.setLocationRelativeTo(null);
@@ -78,7 +78,7 @@ public class LoginPage implements ActionListener {
             if(logininfo.containsKey(username)) {
                 if(logininfo.get(username).equals(password)) {
                         messageLabel.setForeground(Color.green);
-                        messageLabel.setText("Login successful");
+                        JOptionPane.showMessageDialog(frame, "You have successfully logged in!");
                         frame.dispose();
                         WelcomePage welcomePage = new WelcomePage(username);
                 }
